@@ -16,6 +16,6 @@ router.use('/auth', authRoutes);
 router.use('/testimonials', testimonialRoutes);
 router.use('/gallery', galleryRoutes);
 
-router.get('/', (req, res) => res.json({ status: 'ok', message: 'Navankur Ra API is running' }));
+router.get('/', (req, res) => res.json({ status: 'ok', message: 'Navankurra API is running' }));
 
 export default router;

@@ -64,9 +64,9 @@ export default function Contact() {
               <h2 className="mt-4 text-3xl font-semibold">Reach us directly</h2>
             </div>
             <div className="space-y-4 text-sm leading-7">
-              <p><strong>Address:</strong> 401 Navankur House, Mumbai, India</p>
+              <p><strong>Address:</strong> 401 Navankur House,  </p>
               <p><strong>Email:</strong> info@navankurra.com</p>
-              <p><strong>Phone:</strong> +91 98765 43210</p>
+              <p><strong>Phone:</strong> +91 99909 92492</p>
             </div>
             <div className="rounded-3xl bg-white/10 p-6">
               <p className="text-sm uppercase tracking-[0.35em] text-white/80">Working hours</p>

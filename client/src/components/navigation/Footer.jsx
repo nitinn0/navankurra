@@ -15,11 +15,11 @@ export default function Footer() {
         <div className="space-y-4">
           <div className="inline-flex h-12 w-12 items-center justify-center rounded-3xl bg-gradient-to-br from-primary to-secondary text-white shadow-soft">N</div>
           <p className="max-w-sm text-sm leading-7 text-slate-600">
-            Navankur Ra is a modern education brand focused on live training, certification, and career-focused course delivery.
+            Navankurra is a modern education brand focused on live training, certification, and career-focused course delivery.
           </p>
           <div className="space-y-2 text-sm text-slate-600">
-            <p className="inline-flex items-center gap-2"><FiMapPin /> Mumbai, India</p>
-            <p className="inline-flex items-center gap-2"><FiPhone /> +91 98765 43210</p>
+            <p className="inline-flex items-center gap-2"><FiMapPin />  </p>
+            <p className="inline-flex items-center gap-2"><FiPhone /> +91 99909 92492</p>
             <p className="inline-flex items-center gap-2"><FiMail /> info@navankurra.com</p>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-10 border-t border-slate-200 pt-6 text-center text-sm text-slate-500">© 2026 Navankur Ra. All rights reserved.</div>
+      <div className="mt-10 border-t border-slate-200 pt-6 text-center text-sm text-slate-500">© 2026 Navankurra. All rights reserved.</div>
     </footer>
   );
 }

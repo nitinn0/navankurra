@@ -1,7 +1,7 @@
 from pathlib import Path
 
 files = {
-    'README.md': '''# Navankur Ra Education Platform
+    'README.md': '''# Navankurra Education Platform
 
 Modern MERN starter project for a premium educational website.
 
@@ -118,9 +118,9 @@ export default defineConfig({
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navankur Ra | Modern EdTech Platform</title>
-    <meta name="description" content="Navankur Ra offers premium live courses, certificates, and career support for learners who want to accelerate their skill journey." />
-    <meta property="og:title" content="Navankur Ra | Premium EdTech Courses" />
+    <title>Navankurra | Modern EdTech Platform</title>
+    <meta name="description" content="Navankurra offers premium live courses, certificates, and career support for learners who want to accelerate their skill journey." />
+    <meta property="og:title" content="Navankurra | Premium EdTech Courses" />
     <meta property="og:description" content="Modern education platform with live training, certifications, and placement support." />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
@@ -276,7 +276,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-3 text-lg font-semibold text-slate-900">
           <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary text-white shadow-soft">N</span>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Navankur Ra</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Navankurra</p>
             <p className="text-[0.85rem] text-slate-500">Premium Education</p>
           </div>
         </Link>
@@ -337,10 +337,10 @@ export default function Footer() {
         <div className="space-y-4">
           <div className="inline-flex h-12 w-12 items-center justify-center rounded-3xl bg-gradient-to-br from-primary to-secondary text-white shadow-soft">N</div>
           <p className="max-w-sm text-sm leading-7 text-slate-600">
-            Navankur Ra is a modern education brand focused on live training, certification, and career-focused course delivery.
+            Navankurra is a modern education brand focused on live training, certification, and career-focused course delivery.
           </p>
           <div className="space-y-2 text-sm text-slate-600">
-            <p className="inline-flex items-center gap-2"><FiMapPin /> Mumbai, India</p>
+            <p className="inline-flex items-center gap-2"><FiMapPin />  </p>
             <p className="inline-flex items-center gap-2"><FiPhone /> +91 98765 43210</p>
             <p className="inline-flex items-center gap-2"><FiMail /> info@navankurra.com</p>
           </div>
@@ -376,7 +376,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-10 border-t border-slate-200 pt-6 text-center text-sm text-slate-500">© 2026 Navankur Ra. All rights reserved.</div>
+      <div className="mt-10 border-t border-slate-200 pt-6 text-center text-sm text-slate-500">© 2026 Navankurra. All rights reserved.</div>
     </footer>
   );
 }
@@ -704,7 +704,7 @@ export default function About() {
     <section className="bg-slate-50 py-24">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="rounded-[40px] bg-white p-10 shadow-soft">
-          <SectionTitle eyebrow="About Us" title="We help learners build modern careers through immersive education." description="Navankur Ra brings curated live programs, expert mentoring, and real-world certification to ambitious learners." />
+          <SectionTitle eyebrow="About Us" title="We help learners build modern careers through immersive education." description="Navankurra brings curated live programs, expert mentoring, and real-world certification to ambitious learners." />
 
           <div className="mt-16 grid gap-8 lg:grid-cols-[0.95fr_0.85fr] lg:items-start">
             <div className="space-y-8">
@@ -1120,7 +1120,7 @@ export default function Contact() {
               <h2 className="mt-4 text-3xl font-semibold">Reach us directly</h2>
             </div>
             <div className="space-y-4 text-sm leading-7">
-              <p><strong>Address:</strong> 401 Navankur House, Mumbai, India</p>
+              <p><strong>Address:</strong> 401 Navankur House,  </p>
               <p><strong>Email:</strong> info@navankurra.com</p>
               <p><strong>Phone:</strong> +91 98765 43210</p>
             </div>
@@ -1175,7 +1175,7 @@ export default function TermsConditions() {
         <div className="mt-10 space-y-8 rounded-[40px] bg-white p-10 shadow-soft text-slate-700">
           <div>
             <h3 className="mb-4 text-2xl font-semibold text-slate-900">Acceptance of terms</h3>
-            <p className="leading-8">By using Navankur Ra, you agree to our policies, payment terms, and code of conduct during the learning experience.</p>
+            <p className="leading-8">By using Navankurra, you agree to our policies, payment terms, and code of conduct during the learning experience.</p>
           </div>
           <div>
             <h3 className="mb-4 text-2xl font-semibold text-slate-900">Payment and refunds</h3>
@@ -1183,7 +1183,7 @@ export default function TermsConditions() {
           </div>
           <div>
             <h3 className="mb-4 text-2xl font-semibold text-slate-900">Intellectual property</h3>
-            <p className="leading-8">All course content, materials, and branding are owned by Navankur Ra and are protected by copyright.</p>
+            <p className="leading-8">All course content, materials, and branding are owned by Navankurra and are protected by copyright.</p>
           </div>
           <div>
             <h3 className="mb-4 text-2xl font-semibold text-slate-900">Contact us</h3>
@@ -1407,7 +1407,7 @@ router.use('/auth', authRoutes);
 router.use('/testimonials', testimonialRoutes);
 router.use('/gallery', galleryRoutes);
 
-router.get('/', (req, res) => res.json({ status: 'ok', message: 'Navankur Ra API is running' }));
+router.get('/', (req, res) => res.json({ status: 'ok', message: 'Navankurra API is running' }));
 
 export default router;
 ''',

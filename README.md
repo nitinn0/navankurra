@@ -1,4 +1,4 @@
-# Navankur Ra Education Platform
+# Navankurra Education Platform
 
 Modern MERN starter project for a premium educational website.
 

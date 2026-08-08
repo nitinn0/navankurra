@@ -1,11 +1,36 @@
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
+import api from '../services/api.js';
 
 export default function AdminLogin() {
   const { register, handleSubmit } = useForm();
+  const navigate = useNavigate();
+  const [submitting, setSubmitting] = useState(false);
 
-  const onSubmit = (values) => {
-    console.log('Admin login submitted', values);
+  const onSubmit = async (values) => {
+    setSubmitting(true);
+    try {
+      const response = await api.post('/auth/login', values);
+      const { token, user } = response.data;
+
+      if (token) {
+        localStorage.setItem('navankurra_admin_token', token);
+      }
+
+      if (user) {
+        localStorage.setItem('navankurra_admin_user', JSON.stringify(user));
+      }
+
+      toast.success('Login successful');
+      navigate('/admin');
+    } catch (error) {
+      const message = error.response?.data?.message || 'Login failed';
+      toast.error(message);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -26,7 +51,9 @@ export default function AdminLogin() {
               <span className="text-sm font-medium text-slate-900">Password</span>
               <input {...register('password', { required: true })} type="password" className="mt-3 w-full rounded-3xl border border-slate-200 bg-slate-50 px-5 py-4 text-sm outline-none" />
             </label>
-            <button type="submit" className="btn-gradient w-full">Login</button>
+            <button type="submit" disabled={submitting} className="btn-gradient w-full">
+              {submitting ? 'Logging in…' : 'Login'}
+            </button>
           </form>
           <div className="mt-6 text-center text-sm text-slate-600">
             <Link to="/" className="text-primary font-semibold">Return to website</Link>

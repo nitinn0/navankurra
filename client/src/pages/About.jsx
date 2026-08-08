@@ -5,7 +5,7 @@ export default function About() {
     <section className="bg-slate-50 py-24">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="rounded-[40px] bg-white p-10 shadow-soft">
-          <SectionTitle eyebrow="About Us" title="We help learners build modern careers through immersive education." description="Navankur Ra brings curated live programs, expert mentoring, and real-world certification to ambitious learners." />
+          <SectionTitle eyebrow="About Us" title="We help learners build modern careers through immersive education." description="Navankurra brings curated live programs, expert mentoring, and real-world certification to ambitious learners." />
 
           <div className="mt-16 grid gap-8 lg:grid-cols-[0.95fr_0.85fr] lg:items-start">
             <div className="space-y-8">

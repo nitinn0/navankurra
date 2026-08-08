@@ -26,7 +26,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-3 text-lg font-semibold text-slate-900">
           <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary text-white shadow-soft">N</span>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Navankur Ra</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Navankurra</p>
             <p className="text-[0.85rem] text-slate-500">Premium Education</p>
           </div>
         </Link>
@@ -43,7 +43,7 @@ export default function Navbar() {
           <Link to="/contact" className="btn-gradient">Get Started</Link>
           <div className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">
             <FiPhone />
-            <span>+91 98765 43210</span>
+            <span>+91 99909 92492</span>
           </div>
         </div>
 

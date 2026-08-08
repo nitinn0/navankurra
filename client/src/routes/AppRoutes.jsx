@@ -7,7 +7,7 @@ import Courses from '../pages/Courses.jsx';
 import Contact from '../pages/Contact.jsx';
 import Home from '../pages/Home.jsx';
 import NotFound from '../pages/NotFound.jsx';
-import PrivacyPolicy from '../pages/PrivacyPolicy.jsx';
+import LegalPolicy from '../pages/LegalPolicy.jsx';
 import TermsConditions from '../pages/TermsConditions.jsx';
 import VerifyCertificate from '../pages/VerifyCertificate.jsx';
 
@@ -20,7 +20,7 @@ export default function AppRoutes() {
       <Route path="/course/:slug" element={<CourseDetails />} />
       <Route path="/verify-certificate" element={<VerifyCertificate />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/privacy-policy" element={<LegalPolicy />} />
       <Route path="/terms-conditions" element={<TermsConditions />} />
       <Route path="/admin" element={<AdminDashboard />} />
       <Route path="/admin/login" element={<AdminLogin />} />
